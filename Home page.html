@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #181818;
+            position: relative;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .highlight {
+            color: red;
+            transition: color 0.3s ease;
+        }
+        .highlight:hover {
+            color: yellow;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            cursor: pointer;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li:hover {
+            color: red;
+        }
+        nav ul li:hover::after {
+            content: attr(data-popup);
+            position: absolute;
+            background-color: #121212;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            white-space: nowrap;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+        .search-container {
+            position: relative;
+            margin: 20px auto;
+            text-align: center;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: fit-content;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        .search-bar {
+            padding: 5px;
+            border: none;
+            width: 300px;
+        }
+        .filter-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            background: url('https://animesugetv.to/animesuge/images/index.jpg') no-repeat center center/cover;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .recently-updated {
+            padding: 20px;
+            text-align: center;
+        }
+        .recently-updated h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .anime-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding-bottom: 10px;
+        }
+        .anime-item {
+            background: #1d1d1d;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+        }
+        .anime-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .lang-btn{
+            color: white;
+            background-color: red;
+        }
+        .sign-in{
+            color: #fff;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SUGE <span class="highlight">Anime!</span></div>
+        <nav>
+            <ul>
+                <li data-popup="Action, Adventure, and Romance">GENRES</li></div>
+                <li data-popup="TV series, movies, and OVAs">TYPES</li>
+                <li data-popup="Check out the most recently updated anime episodes and series">UPDATED</li>
+                <li data-popup="Discover the latest anime additions to our library">ADDED</li>
+                <li data-popup="Browse the most popular anime loved by fans worldwide">POPULAR</li>
+                <li data-popup="Get a sneak peek of upcoming anime releases">UPCOMING</li>
+                <li data-popup="Follow the currently airing anime series">ONGOING</li>
+                <li data-popup="Find anime that have been fully completed and are ready to binge-watch">COMPLETED</li>
+                <li data-popup="Check the schedule for upcoming anime episodes and releases">SCHEDULE</li>
+                <li data-popup="Feeling adventurous? Let us pick a random anime for you!">RANDOM</li>   
+            </ul>
+        </nav>
+        <div class="lang"><button class="lang-btn">EN</button><button class="lang-btn">JP</button></div>
+        <button class="sign-in">Sign In</button>
+    </header>
+    <section class="hero">
+       </section>
+    <section class="recently-updated">
+        <h2>RECENTLY UPDATED</h2>
+        <div class="anime-list">
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/ec/eb/eceb1ae6ae089303382cfc6c2efe75b3/eceb1ae6ae089303382cfc6c2efe75b3.jpg" alt="Anime 1">
+                <p>Garden</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/9d/ef/9def654ba1b42f0e9aa580301dadb502/9def654ba1b42f0e9aa580301dadb502.jpg" alt="Anime 2">
+                <p>Everything is Fine with the Emperor</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/50/db/50dba3709f716a66809e0d8371dc6baf/50dba3709f716a66809e0d8371dc6baf.jpg" alt="Anime 3">
+                <p>Magilumiere Co. Ltd.</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/24/77/2477fa93438bbca1798d0cd764f3eb21/2477fa93438bbca1798d0cd764f3eb21.jpg" alt="Anime 4">
+                <p>Aquarion: Myth of Emotions</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/62/56/6256426cfa94332309fa3b10b37dde06/6256426cfa94332309fa3b10b37dde06.jpg" alt="Anime 5">
+                <p>Dr. Stone: Science Future</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/f3/8d/f38df6e806fe7e21ac52727ae3c0503e/f38df6e806fe7e21ac52727ae3c0503e.jpg" alt="Anime 6">
+                <p>Anyway, I'm Falling in Love with You</p>
+            </div>
+            <div class="anime-item">
+                <img src="https://img.flawlessfiles.com/_r/300x400/100/82/21/82212d29aa7281bfa1d92be7f6454d84/82212d29aa7281bfa1d92be7f6454d84.jpg" alt="Anime 7">
+                <p>TRILLION GAME</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

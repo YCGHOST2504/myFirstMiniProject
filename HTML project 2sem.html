@@ -1,0 +1,154 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #181818;
+            position: relative;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .highlight {
+            color: red;
+            transition: color 0.3s ease;
+        }
+        .highlight:hover {
+            color: yellow;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            cursor: pointer;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li:hover {
+            color: red;
+        }
+        nav ul li:hover::after {
+            content: attr(data-popup);
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .search-container {
+            position: relative;
+            margin: 20px auto 0;
+            text-align: center;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            width: fit-content;
+        }
+        .search-bar {
+            padding: 5px;
+            border: none;
+            width: 200px;
+            
+        }
+        .lang-btn, .sign-in, .filter-btn, .homepage-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            background: url('https://animesugetv.to/animesuge/images/index.jpg') no-repeat center center/cover;
+            height: 200px;
+            
+            padding-top: 60px;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        .social-share button {
+            top: 10px;
+            margin: 5px;
+        }
+        h2, h3 {
+            transition: color 0.3s ease;
+        }
+        h2:hover, h3:hover {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SUGE <span class="highlight">Anime!</span></div>
+        <nav>
+            <ul>
+                <li data-popup="action, adventure, and romance">GENRES</li>
+                <li data-popup="TV series, movies, and OVAs">TYPES</li>
+                <li data-popup="Check out the most recently updated anime episodes and series">UPDATED</li>
+                <li data-popup="Discover the latest anime additions to our library">ADDED</li>
+                <li data-popup="Browse the most popular anime loved by fans worldwide">POPULAR</li>
+                <li data-popup="Get a sneak peek of upcoming anime releases">UPCOMING</li>
+                <li data-popup="Follow the currently airing anime series">ONGOING</li>
+                <li data-popup="Find anime that have been fully completed and are ready to binge-watch">COMPLETED</li>
+                <li data-popup="Check the schedule for upcoming anime episodes and releases">SCHEDULE</li>
+                <li data-popup="Feeling adventurous? Let us pick a random anime for you!">RANDOM</li>
+            </ul>
+        </nav>
+        <div class="lang"><button class="lang-btn">EN</button><button class="lang-btn">JP</button></div>
+        <button class="sign-in">Sign In</button>
+    </header>
+    <div class="search-container">
+        <input type="text" placeholder="Search" class="search-bar">
+        <button class="filter-btn">Filter</button>
+    </div>
+    <section class="hero">
+    </section>
+    <section class="content">
+        <a href="file:///C:/Users/chikh/Documents/html%20project/Home%20page.html"
+        <button class="homepage-btn">Enter Homepage</button>
+        ></a>
+        <div class="social-share">
+            <button>Share</button>
+            <button>Tweet</button>
+            <button>Share</button>
+        </div>
+        <article>
+            <h2>WATCH ANIME ONLINE</h2>
+            <p><strong>Animesuge</strong> is a <strong>free streaming anime</strong> website that allows you to <strong>watch anime online</strong> in English subbed and dubbed...</p>
+            <h3>What is Animesuge.to?</h3>
+            <p>Animesuge.to is a free site where you can watch anime online in high definition...</p>
+            <h3>Is Animesuge Safe?</h3>
+            <p>Yes, Animesuge is safe...</p>
+        </article>
+    </section>
+</body>
+</html>
